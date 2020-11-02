@@ -6,10 +6,23 @@ Livros
 Livros
 @endsection
 @section('conteudo')
+
+
 <ul>
 @foreach ($livros as $livro)
-<li>{{$livro->titulo}}</li>
+
+<a href="{{route('livros.show',['id'=>$livro->idl])}}">
+<li>{{$livro->titulo}}
+    
+</li>
+</a>
 @endforeach
 </ul>
+
+
 {{$livros->render()}}
 @endsection
+
+
+
+

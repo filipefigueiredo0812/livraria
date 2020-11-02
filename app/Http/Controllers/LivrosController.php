@@ -15,4 +15,23 @@ class LivrosController extends Controller
             'livros'=>$livros
         ]);
     }
+    
+    public function show(Request $r){
+        
+        $idLivro = $r->id;
+        
+        //$livro = Livro::findOrFail($idLivro);
+        
+        //$livro = Livro::find($idLivro);
+        
+        $livro = Livro::where('idl',$idLivro)->first();
+        
+        
+        return view ('livros.show', [
+            'livro'=>$livro
+        ]);
+        
+    }
+    
+    
 }

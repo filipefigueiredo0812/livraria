@@ -8,9 +8,13 @@ Autores
 
 @section('conteudo')
 <ul> 
+    
 @foreach ($autores as $autor)
+<a href="{{route('autores.show',['id'=>$autor->ida])}}">
 <li>{{$autor->nome}}</li>
+</a>
 @endforeach
+    
 </ul>
 {{$autores->render()}}
 @endsection
