@@ -14,4 +14,14 @@ class EditorasController extends Controller
             'editoras'=>$editoras
         ]);
     }
+    
+    public function show(Request $r){
+        $idEditora = $r->id;
+        $editora = Editora::where('id_editora',$idEditora)->first();
+        
+        
+        return view ('editoras.show', [
+            'editora'=>$editora
+        ]);
+    }
 }

@@ -18,7 +18,7 @@ class GenerosController extends Controller
         
         $idGenero = $r->id;
         
-        $genero = Genero::where('idg',$idGenero)->first();
+        $genero = Genero::where('id_genero',$idGenero)->first();
         
         
         return view ('generos.show', [

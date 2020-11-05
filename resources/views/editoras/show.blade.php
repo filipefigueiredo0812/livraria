@@ -1,3 +1,13 @@
-ID:{{$editora->ide}}<br>
+@extends('layout')
+@section('titulo')
+Editoras
+@endsection
+@section('header')
+Editoras
+@endsection
+@section('conteudo')
+ID:{{$editora->id_editora}}<br>
 Nome:{{$editora->nome}}<br>
-Morada:{{$editora->morada}}
+Morada:{{$editora->morada}}<br>
+Observações:{{$editora->observacoes}}<br>
+@endsection

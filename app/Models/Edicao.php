@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Genero extends Model
+class Edicao extends Model
 {
     use HasFactory;
     
     
-    protected $primaryKey = "id_genero";
-    protected $table = "generos";
+    protected $primaryKey = "id_livro";
+    
+    protected $table = "edicoes";
 }

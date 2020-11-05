@@ -38,3 +38,6 @@ Route::get('/generos/{id}/show', 'App\Http\Controllers\GenerosController@show')
 
 Route::get('/autores/{id}/show', 'App\Http\Controllers\AutoresController@show')
     ->name('autores.show');
+
+Route::get('/editoras/{id}/show', 'App\Http\Controllers\EditorasController@show')
+    ->name('editoras.show');
